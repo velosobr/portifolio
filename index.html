@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de projetos de Android de [Seu Nome]">
+    <meta name="description" content="Portfólio de projetos de Android de Lino Veloso">
     <meta name="keywords" content="Android, Portfólio, Desenvolvimento, Projetos">
     <meta name="author" content="Lino Veloso">
-    <title>Lino Veloso - velosobr</title>
+    <title>Portfólio de Lino Veloso</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -14,28 +16,14 @@
             background-color: #121212;
             color: #ffffff;
         }
-        header {
+        .navbar {
             background-color: #1f1f1f;
-            padding: 20px;
-            text-align: center;
         }
-        header h1 {
-            margin: 0;
-            color: #76ff03; /* Verde para lembrar o Android */
-        }
-        nav {
-            margin: 20px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #76ff03;
-            text-decoration: none;
-            margin: 0 15px;
+        .navbar-brand, .nav-link {
+            color: #76ff03 !important; /* Verde para lembrar o Android */
         }
         .content {
             padding: 20px;
-            max-width: 1000px;
-            margin: auto;
         }
         .project {
             border: 1px solid #2e2e2e;
@@ -44,43 +32,48 @@
             border-radius: 5px;
             background-color: #1f1f1f;
         }
-        .project h2 {
+        .project h3 {
             color: #76ff03;
         }
         footer {
             background-color: #1f1f1f;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
         footer p {
             margin: 0;
         }
-        @media (max-width: 600px) {
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Portfólio de [Seu Nome]</h1>
-    </header>
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Portfólio de Lino Veloso</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div class="content">
-        <section id="sobre">
+
+    <!-- Main Content -->
+    <div class="content container">
+        <section id="sobre" class="mt-5">
             <h2>Sobre</h2>
-            <p>Bem-vindo ao meu portfólio! Sou o Lino Veloso, desenvolvedor Android apaixonado por criar aplicativos inovadores e funcionais. Aqui você encontrará alguns dos projetos que desenvolvi ao longo da minha carreira.</p>
+            <p>Bem-vindo ao meu portfólio! Sou Lino Veloso, desenvolvedor Android apaixonado por criar aplicativos inovadores e funcionais. Aqui você encontrará alguns dos projetos que desenvolvi ao longo da minha carreira.</p>
         </section>
-        <section id="projetos">
+        <section id="projetos" class="mt-5">
             <h2>Projetos</h2>
             <div class="project">
                 <h3>Projeto 1</h3>
@@ -92,13 +85,20 @@
             </div>
             <!-- Adicione mais projetos aqui -->
         </section>
-        <section id="contato">
+        <section id="contato" class="mt-5">
             <h2>Contato</h2>
             <p>Você pode entrar em contato comigo através do email: <a href="mailto:linoc.veloso@gmail.com">linoc.veloso@gmail.com</a></p>
         </section>
     </div>
-    <footer>
-        <p>&copy; 2024 [Lino Veloso]. Todos os direitos reservados.</p>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <p>&copy; 2024 Lino Veloso. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
